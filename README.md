@@ -1,2 +1,2 @@
 # Cpp
- Cpp in vscode，Github account is iniPhone Github
+ Cpp in vscode，Github account is in iPhone Github
