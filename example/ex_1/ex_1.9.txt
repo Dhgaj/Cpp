@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // 定义一个整型变量a并初始化为2345
+    int a = 2345;
+
+    // 定义一个整型指针变量pa
+    int *pa;
+
+    // 定义一个整型引用变量ra，引用a
+    int &ra = a;
+
+    // 将a的地址赋值给指针变量pa
+    pa = &a;
+
+    // 输出a、ra和*pa的值，它们应该相同
+    cout << a << "\t" << ra << "\t" << *pa << endl;
+
+    // 输出a、ra和pa的地址，ra的地址应该和a的地址相同，pa的地址是pa指针所储存的地址
+    cout << &a << "\t" << &ra << "\t" << pa << endl;
+
+    // 输出pa指针本身的地址
+    cout << &pa << endl;
+
+    return 0;
+}

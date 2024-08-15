@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, s;
+    cout.setf(ios::showbase);
+    a = 0111;
+    b = 0223;
+    s = a + b;
+    cout << "八进制数:" << oct << s << endl;
+    cout << "十进制数:" << dec << s << endl;
+    cout << "十六进制数:" << hex << s << endl;
+    cout << "\n";
+    a = 0x11;
+    b = 0x23;
+    s = a + b;
+    cout << "八进制数:" << oct << s << endl;
+    cout << "十进制数:" << dec << s << endl;
+    cout << "十六进制数:" << hex << s << endl;
+    return 0;
+}

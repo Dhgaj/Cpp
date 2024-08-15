@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+enum Color
+{
+    RED,
+    GREEN,
+    BLUE,
+    YELLOW,
+    PURPLE
+
+};
+
+int main()
+{
+    Color c;
+    c = GREEN;
+    cout << c << endl;
+    c = PURPLE;
+    cout << c << endl;
+    return 0;
+}

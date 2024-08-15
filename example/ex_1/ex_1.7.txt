@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    long int a = 100, b = 200, t;
+    long int *pa = &a, *pb = &b, *pt;
+
+    // 输出变量a和b的地址
+    cout << pa << "\t" << pb << endl;
+
+    // 输出变量a和b的值
+    cout << *pa << "\t" << *pb << endl;
+
+    // 交换变量a和b的值
+    t = *pa;
+    *pa = *pb;
+    *pb = t;
+
+    // 输出交换后的变量a和b的值
+    cout << *pa << "\t" << *pb << endl;
+
+    // 交换指针pa和pb的指向
+    pt = pa;
+    pa = pb;
+    pb = pt;
+
+    // 输出交换后的指针pa和pb的值（即a和b的地址）
+    cout << pa << "\t" << pb << endl;
+
+    // 输出指针pa和pb所指向的值（即变量a和b的值）
+    cout << *pa << "\t" << *pb << endl;
+
+    // 输出变量a和b的值，验证交换是否成功
+    cout << a << "\t" << b << endl;
+
+    return 0;
+}

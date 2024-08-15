@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    bool b;
+    b = true;
+    cout << "true\t" << b << endl;
+    b = false;
+    cout << "false\t" << b << endl;
+    return 0;
+}

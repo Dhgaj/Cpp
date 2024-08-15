@@ -1,0 +1,36 @@
+{
+  // 使用 IntelliSense 了解相关属性。
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "args": [
+        "-g",
+        "${file}", //单文件的设置
+        // "${fileDirname}/*.cpp", //多文件的设置
+        "-o",
+        "${fileDirname}/.Trash/${fileBasenameNoExtension}"
+        // "-fcolor-diagnostics",
+        // "-fansi-escape-codes",
+        // "-std=c++2b",
+        // "-O2",
+        // "-g3",
+        // "-g",
+        // "-o",
+        // "${fileDirname}/.Trash/${fileBasenameNoExtension}",
+        // "-Wall"
+      ],
+      "type": "lldb",
+      "request": "launch",
+      "stopOnEntry": true,
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/.Trash/${fileBasenameNoExtension}",
+      // "preLaunchTask": "C++: clang++ build active file",
+      "preLaunchTask": "Build",
+      "console": "integratedTerminal",
+      "sourceLanguages": ["cpp"]
+    }
+  ]
+}

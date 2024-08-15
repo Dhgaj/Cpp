@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+class Circle
+{
+    double radius;
+
+public:
+    void setRadius(double r)
+    {
+        radius = r;
+    }
+    double getRadius()
+    {
+        return radius;
+    }
+    double getGirth()
+    {
+        return 2 * radius * 3.14;
+    }
+    double getArea()
+    {
+        return radius * radius * 3.14;
+    }
+};
+int main()
+{
+    Circle A, B;
+    A.setRadius(6.23);
+    cout << A.getRadius() << endl;
+    cout << A.getGirth() << endl;
+    cout << A.getArea() << endl;
+    B.setRadius(10.5);
+    cout << B.getRadius() << endl;
+    cout << B.getGirth() << endl;
+    cout << B.getArea() << endl;
+    return 0;
+}

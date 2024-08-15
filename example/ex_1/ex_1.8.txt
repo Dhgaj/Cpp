@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // 定义一个整型变量a并初始化为100
+    int a = 100;
+    // 定义一个整型指针ip
+    int *ip;
+    // 定义一个void指针vp，并将a的地址赋值给vp
+    void *vp = &a;
+    // 将vp强制转换为整型指针，并解引用输出该指针指向的值
+    cout << *(int *)vp << endl;
+    // 将vp强制转换为字符指针，并解引用输出该指针指向的字符（实际上是第一个字节的ASCII码值）
+    cout << *(char *)vp << endl;
+    // 将vp强制转换为整型指针，并将结果赋值给ip
+    ip = (int *)vp;
+    // 解引用ip并输出其指向的值
+    cout << *ip << endl;
+    return 0;
+}
