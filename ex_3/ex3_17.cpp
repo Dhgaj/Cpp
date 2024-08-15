@@ -2,20 +2,24 @@
 using namespace std;
 
 int &count(int);
-int a, b;
+int a, b;  ／／全局变量
+
 int main()
 {
     int x;
     cout << "Please input number(0 is end): ";
     cin >> x;
+
     while (x)
     {
         count(x)++;
         cin >> x;
     }
+
     cout << "the number of right : " << a << endl;
     cout << "the number of negative : " << b << endl;
 }
+
 int &count(int n)
 {
     if (n > 0)
