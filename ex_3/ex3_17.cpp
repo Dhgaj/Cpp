@@ -9,11 +9,13 @@ int main()
     int x;
     cout << "Please input number(0 is end): ";
     cin >> x;
+
     while (x)
     {
         count(x)++;
         cin >> x;
     }
+
     cout << "the number of right : " << a << endl;
     cout << "the number of negative : " << b << endl;
 }
