@@ -11,10 +11,10 @@
         "${file}", //单文件的设置
         // "${fileDirname}/*.cpp", //多文件的设置
         "-o",
-        "${fileDirname}/.Trash/${fileBasenameNoExtension}"
+        "${fileDirname}/.Trash/${fileBasenameNoExtension}",
         // "-fcolor-diagnostics",
         // "-fansi-escape-codes",
-        // "-std=c++2b",
+        "-std=c++2b"
         // "-O2",
         // "-g3",
         // "-g",
