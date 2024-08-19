@@ -14,9 +14,9 @@
         "-g",
         "-g3",
         "-std=c++2b",
-        "${file}", //单文件的设置
+        "-Wall",
+        "${file}" //单文件的设置
         // "${fileDirname}/*.cpp", //多文件的设置
-        "-Wall"
       ],
       "options": {
         "cwd": "${fileDirname}"

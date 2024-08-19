@@ -1,12 +1,14 @@
 {
   //隐藏文件/文件夹
   "files.exclude": {
-    "**/.Trash": true, //隐藏回收站
     "**/test.txt": true,
     "**/Icon?": true, //隐藏图标
     "**/.gitattributes": true,
-    "**/.gitignore": true,
-    "**/example": true
+    "**/Lab": true,
+    "**/README.md": true,
+    "**/.gitignore": true, //Github上传忽略文件
+    "**/.Trash": true, //隐藏回收站
+    "**/example": true //隐藏example例子的文件夹
   },
   "code-runner.executorMap": {
     // "cpp": "cd $dir && mkdir -p .Trash && clear && rm -rf temptemptempCodeRunnerFile.cpp && clang++ -std=c++2b -g *.cpp -o .Trash/$fileNameWithoutExt && .Trash/$fileNameWithoutExt && printf '\n' && rm -rf .Trash && printf ' '",
