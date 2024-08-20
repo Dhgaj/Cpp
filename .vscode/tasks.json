@@ -1,11 +1,12 @@
 {
   "tasks": [
     {
-      "type": "cppbuild",
-      // "label": "C++: clang++ build active file",
       "label": "Build",
+      // "label": "C++: clang++ build active file",
+      "type": "cppbuild",
       "command": "/usr/bin/clang++",
       "args": [
+        "-std=c++23", //控制编译的版本，以最后一个为准
         "-o2",
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
@@ -13,10 +14,9 @@
         "${fileDirname}/.Trash/${fileBasenameNoExtension}",
         "-g",
         "-g3",
-        "-std=c++2b",
-        "-Wall",
-        "${file}" //单文件的设置
+        "${file}", //单文件的设置
         // "${fileDirname}/*.cpp", //多文件的设置
+        "-Wall"
       ],
       "options": {
         "cwd": "${fileDirname}"

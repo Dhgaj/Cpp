@@ -1,13 +1,13 @@
 {
   //隐藏文件/文件夹
   "files.exclude": {
+    // "**/.Trash": true, //隐藏回收站
     "**/test.txt": true,
     "**/Icon?": true, //隐藏图标
     "**/.gitattributes": true,
     "**/Lab": true,
     "**/README.md": true,
     "**/.gitignore": true, //Github上传忽略文件
-    "**/.Trash": true, //隐藏回收站
     "**/example": true //隐藏example例子的文件夹
   },
   "code-runner.executorMap": {
@@ -189,7 +189,8 @@
     "stack": "cpp",
     "unordered_map": "cpp",
     "vector": "cpp",
-    "cassert": "cpp"
+    "cassert": "cpp",
+    "iomanip": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "C_Cpp.dimInactiveRegions": true,
