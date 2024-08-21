@@ -116,7 +116,7 @@
   "terminal.integrated.lineHeight": 1.25,
   "terminal.integrated.letterSpacing": 3,
   "terminal.integrated.fontFamily": "Monaco",
-  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyleInactive": "block",
   "terminal.integrated.cursorStyle": "block",
