@@ -1,11 +1,11 @@
 {
   //隐藏文件/文件夹
   "files.exclude": {
-    // "**/.Trash": true, //隐藏回收站
+    "**/.Trash": true, //隐藏回收站
     "**/check_std_version.cpp": true,
     "**/c_cpp_properties.json": true,
-    // "**/tasks.json": true,
-    // "**/launch.json": true,
+    "**/tasks.json": true,
+    "**/launch.json": true,
     "**/test.txt": true,
     "**/Icon?": true, //隐藏图标
     "**/.gitattributes": true,
