@@ -11,7 +11,7 @@
     "**/.gitattributes": true,
     "**/Lab": true,
     "**/README.md": true,
-    "**/.gitignore": true, //Github上传忽略文件
+    // "**/.gitignore": true, //Github上传忽略文件
     "**/example": true //隐藏example例子的文件夹
   },
   "code-runner.executorMap": {
