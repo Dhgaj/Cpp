@@ -11,7 +11,7 @@
     "**/.gitattributes": true,
     "**/Lab": true,
     "**/README.md": true,
-    // "**/.gitignore": true, //Github上传忽略文件
+    "**/.gitignore": true, //Github上传忽略文件
     "**/example": true //隐藏example例子的文件夹
   },
   "code-runner.executorMap": {
@@ -128,7 +128,7 @@
   "terminal.integrated.tabs.showActiveTerminal": "always",
   "terminal.integrated.tabs.showActions": "always",
   "terminal.integrated.tabs.location": "right",
-  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.enabled": true, //集成终端右上角是否显示路径
   "terminal.integrated.tabs.title": "${process}",
   "terminal.integrated.tabs.description": "${cwd}",
   "terminal.integrated.tabs.separator": "~",
