@@ -11,7 +11,7 @@
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
         "-o",
-        "${fileDirname}/.Trash/${fileBasenameNoExtension}",
+        "${fileDirname}/Trash/${fileBasenameNoExtension}",
         "-g",
         "-g3",
         "${file}", //单文件的设置
@@ -49,11 +49,11 @@
     {
       "label": "Clean", // 清理任务
       "type": "shell",
-      "command": "rm",
+      "command": "trash",
       "args": [
-        "-rf",
+        // "-rf",
         // "${fileDirname}/.Trash/${fileBasenameNoExtension}",
-        "${fileDirname}/.Trash"
+        "${fileDirname}/Trash"
       ],
       "group": "none",
       "problemMatcher": [],
@@ -81,7 +81,7 @@
       "type": "shell",
       "dependsOn": ["BuildAndDebug"], // 依赖于 BuildAndDebug 任务
       "command": "lldb",
-      "args": ["${workspaceFolder}/.Trash/${fileBasenameNoExtension}"],
+      "args": ["${workspaceFolder}/Trash/${fileBasenameNoExtension}"],
       "problemMatcher": [],
       "group": "none"
     }

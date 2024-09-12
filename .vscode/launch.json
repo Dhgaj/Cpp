@@ -12,7 +12,7 @@
         "${file}", //单文件的设置
         // "${fileDirname}/*.cpp", //多文件的设置
         "-g",
-        "${fileDirname}/.Trash/${fileBasenameNoExtension}"
+        "${fileDirname}/Trash/${fileBasenameNoExtension}"
         // "-fcolor-diagnostics",
         // "-std=c++23",
         // "-fansi-escape-codes",
@@ -28,7 +28,7 @@
       // "cwd": "${workspaceFolder}", // 设置当前工作目录为工作空间的根目录
       // "program": "${workspaceFolder}/.Trash/${fileBasenameNoExtension}",
       "cwd": "${fileDirname}", // 设置当前工作目录为文件所在目录
-      "program": "${fileDirname}/.Trash/${fileBasenameNoExtension}",
+      "program": "${fileDirname}/Trash/${fileBasenameNoExtension}",
       "preLaunchTask": "Build", // 调试前运行的任务，任务名为 "Build"
       // "preLaunchTask": "C++: clang++ build active file",
       "postDebugTask": "Clean", // 调试后运行的任务
