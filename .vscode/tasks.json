@@ -6,12 +6,13 @@
       "type": "cppbuild", // 任务类型，cppbuild是vscode的内置任务类型
       "command": "/usr/bin/clang++", // 任务执行的命令
       "args": [
-        "-std=c++23", //控制编译的版本，以最后一个为准
+        // "-std=c++23", //控制编译的版本，以最后一个为准
+        "-std=c++98",
         "-o2",
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
         "-o",
-        "${fileDirname}/Trash/${fileBasenameNoExtension}",
+        "${fileDirname}/.Trash/${fileBasenameNoExtension}",
         "-g",
         "-g3",
         "${file}", //单文件的设置
@@ -53,7 +54,7 @@
       "args": [
         // "-rf",
         // "${fileDirname}/.Trash/${fileBasenameNoExtension}",
-        "${fileDirname}/Trash"
+        "${fileDirname}/.Trash"
       ],
       "group": "none",
       "problemMatcher": [],
@@ -81,7 +82,7 @@
       "type": "shell",
       "dependsOn": ["BuildAndDebug"], // 依赖于 BuildAndDebug 任务
       "command": "lldb",
-      "args": ["${workspaceFolder}/Trash/${fileBasenameNoExtension}"],
+      "args": ["${workspaceFolder}/.Trash/${fileBasenameNoExtension}"],
       "problemMatcher": [],
       "group": "none"
     }

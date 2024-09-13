@@ -20,7 +20,7 @@
     // "cpp": "cd $dir && mkdir -p .Trash && clear && rm -rf temptemptempCodeRunnerFile.cpp && clang++ -std=c++2b -g *.cpp -o .Trash/$fileNameWithoutExt && .Trash/$fileNameWithoutExt && echo '\n' && echo && rm -rf .Trash",
     // "cpp": "cd $dir && mkdir -p .Trash && rm -rf temptemptempCodeRunnerFile.cpp && echo 's1' && clang++ -std=c++20 -g $fileName -o .Trash/$fileNameWithoutExt && echo 's2' && echo  && .Trash/$fileNameWithoutExt && echo 's3' && rm -rf .Trash",//测试cpp的code runner设置
     // "cpp": "cd $dir && mkdir -p .Trash && clear && rm -rf temptemptempCodeRunnerFile.cpp && clang++ -std=c++2b -g *.cpp -o .Trash/$fileNameWithoutExt && .Trash/$fileNameWithoutExt && echo '\n' && trash .Trash", // 多文件运行
-    "cpp": "cd $dir && mkdir -p Trash && clear && rm -rf temptemptempCodeRunnerFile.cpp && clang++ -std=c++2b -g $fileName -o Trash/$fileNameWithoutExt && Trash/$fileNameWithoutExt && echo '\n' && trash Trash", // 单文件运行
+    "cpp": "cd $dir && mkdir -p .Trash && clear && rm -rf temptemptempCodeRunnerFile.cpp && clang++ -std=c++2b -g $fileName -o .Trash/$fileNameWithoutExt && .Trash/$fileNameWithoutExt && echo '\n' && trash .Trash", // 单文件运行
     // "cpp": "cd $dir && mkdir -p .Trash && rm -rf temptemptempCodeRunnerFile.cpp && clang++ -std=c++2b -g $fileName -o .Trash/$fileNameWithoutExt && .Trash/$fileNameWithoutExt  && rm -rf .Trash",
 
     // "c": "cd $dir && mkdir -p .Trash && clang -std=c2x -g *.c -o .Trash/$fileNameWithoutExt >/dev/null 2>&1 && .Trash/$fileNameWithoutExt >/dev/null 2>&1 && rm -r -f .Trash",
