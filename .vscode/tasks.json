@@ -6,8 +6,8 @@
       "type": "cppbuild", // 任务类型，cppbuild是vscode的内置任务类型
       "command": "/usr/bin/clang++", // 任务执行的命令
       "args": [
-        // "-std=c++23", //控制编译的版本，以最后一个为准
-        "-std=c++98",
+        "-std=c++23", //控制编译的版本，以最后一个为准
+        // "-std=c++98",
         "-o2",
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
@@ -38,7 +38,7 @@
       "presentation": {
         "echo": true, // 在终端中回显命令
         "reveal": "never", // 从不显示终端窗口
-        "focus": true, // 不聚焦到终端窗口
+        "focus": true, // 聚焦到终端窗口
         // "panel": "dedicated", // 使用专用的终端面板
         "panel": "shared", // 使用共享的终端面板
         "showReuseMessage": false, // 不显示重用终端的消息
