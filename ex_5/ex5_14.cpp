@@ -32,11 +32,11 @@ void Input(person all[], const int n)
     int i;
     for (i = 0; i < n; i++)
     {
-        cout << i << ".Name";
+        cout << i << ".Name  ";
         cin >> all[i].name;
-        cout << "ID";
+        cout << "ID   ";
         cin >> all[i].id;
-        cout << "Salary";
+        cout << "Salary   ";
         cin >> all[i].salary;
     }
 }
