@@ -31,3 +31,22 @@ void CreatList(Node *&head)
     delete s;
     return;
 }
+
+void ShowList(Node *head)
+{
+    cout << "Now the items of node are:\n";
+    while (head)
+    {
+        cout << head->date << endl;
+        head = head->next;
+    }
+    cout << endl;
+}
+
+int main()
+{
+    Node *head = NULL;
+    CreatList(head);
+    ShowList(head);
+    return 0;
+}
