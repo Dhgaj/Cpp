@@ -1,5 +1,5 @@
 {
-  //隐藏文件/文件夹
+  // 隐藏文件/文件夹
   "files.exclude": {
     "**/.Trash/": true, //隐藏回收站
     "**/check_std_version.cpp": true,
